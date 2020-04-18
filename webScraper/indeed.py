@@ -2,9 +2,19 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-class Scrapper() :
-    def __init__(self):
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5 import QtGui, uic
+form_class = uic.loadUiType("indeed.ui")[0]
+
+class Scrapper(QObject) :
+    updated = pyqtSignal(int)
+
+    def __init__(self, textBrowser):
+        super().__init__()
         self.url = "https://kr.indeed.com/jobs?q=python"
+        self.textBrowser = textBrowser
 
     def getHTML(self, cnt):
         res = requests.get(self.url + "&start=" + str(cnt * 10))
@@ -58,7 +68,41 @@ class Scrapper() :
            soupCard = self.getHTML(i)
            self.getCards(soupCard, i)
            print(i+1, "번째 페이지 Done")
+           self.textBrowser.append("%d번째 페이지 Done" %(i+1))
+           self.updated.emit(int((i+1)/pages)*100)
 
-if __name__ == "__main__":
-    s = Scrapper()
-    s.scrap()
+
+class WindowClass(QMainWindow, form_class):
+        def __init__(self):
+            super().__init__()
+            self.setupUi(self)
+
+            # 자신의 크롤러 class 가져오기
+
+            self.crawler = Scrapper(self.textBrowser)
+
+            # Thread 적용
+            self.thread = QThread()
+            self.crawler.moveToThread(self.thread)
+            self.thread.start()
+
+            # 푸쉬 버튼과 자신의 크롤러 실행을 연결
+            self.pushButton.clicked.connect(self.crawler.scrap)
+
+            # set window title
+            self.setWindowTitle("indeed crawler")
+
+            # progressBar 시그널이 발생했을 때
+            self.crawler.updated.connect(self.progressBarValue)
+            self.progressBarValue(0)
+
+        def progressBarValue(self, value):
+            self.progressBar.setValue(value)
+
+
+
+if __name__ == '__main__':
+        app = QApplication(sys.argv)
+        myWindow = WindowClass()
+        myWindow.show()
+        app.exec_()

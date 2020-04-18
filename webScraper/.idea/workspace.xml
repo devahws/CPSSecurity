@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="514ac36c-1a97-4c1c-af84-b49d6d4629c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kyobo.csv" afterDir="false" />
+    <list default="true" id="514ac36c-1a97-4c1c-af84-b49d6d4629c0" name="Default Changelist" comment="1st Assignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indeed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/indeed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/indeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kyobo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/kyobo.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.kyobo">
+  <component name="RunManager" selected="Python.indeed">
     <configuration name="indeed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,10 +77,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="skeleton_ui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CPS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/skeleton_ui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.kyobo" />
         <item itemvalue="Python.indeed" />
+        <item itemvalue="Python.skeleton_ui" />
+        <item itemvalue="Python.kyobo" />
       </list>
     </recent_temporary>
   </component>
@@ -95,41 +117,54 @@
       <option name="presentableId" value="Default" />
       <updated>1586269288546</updated>
     </task>
+    <task id="LOCAL-00001" summary="1st Assignment">
+      <created>1586414491206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586414491206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st Assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st Assignment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="170" y="0" key="CommitChangelistDialog2" timestamp="1586414510415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="170" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1586414510415" />
-    <state width="1259" height="146" key="GridCell.Tab.0.bottom" timestamp="1586414494369">
+    <state width="1259" height="127" key="GridCell.Tab.0.bottom" timestamp="1586496556879">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1899" height="248" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586361068075" />
-    <state width="1899" height="248" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586364092242" />
-    <state width="1259" height="146" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1586414494369" />
-    <state width="1259" height="146" key="GridCell.Tab.0.center" timestamp="1586414494369">
+    <state width="1259" height="127" key="GridCell.Tab.0.bottom/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586496556879" />
+    <state width="1259" height="146" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1586414704877" />
+    <state width="1259" height="127" key="GridCell.Tab.0.center" timestamp="1586496556878">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1899" height="248" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586361068075" />
-    <state width="1899" height="248" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586364092241" />
-    <state width="1259" height="146" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1586414494369" />
-    <state width="1259" height="146" key="GridCell.Tab.0.left" timestamp="1586414494368">
+    <state width="1259" height="127" key="GridCell.Tab.0.center/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586496556878" />
+    <state width="1259" height="146" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1586414704877" />
+    <state width="1259" height="127" key="GridCell.Tab.0.left" timestamp="1586496556878">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1899" height="248" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586361068075" />
-    <state width="1899" height="248" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586364092240" />
-    <state width="1259" height="146" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1586414494368" />
-    <state width="1259" height="146" key="GridCell.Tab.0.right" timestamp="1586414494369">
+    <state width="1259" height="127" key="GridCell.Tab.0.left/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586496556878" />
+    <state width="1259" height="146" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1586414704877" />
+    <state width="1259" height="127" key="GridCell.Tab.0.right" timestamp="1586496556879">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1899" height="248" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586361068075" />
-    <state width="1899" height="248" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586364092242" />
-    <state width="1259" height="146" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1586414494369" />
-    <state x="435" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1586408327414">
+    <state width="1259" height="127" key="GridCell.Tab.0.right/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586496556879" />
+    <state width="1259" height="146" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1586414704877" />
+    <state x="435" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1586492642793">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="-1268" y="364" key="com.intellij.ide.util.TipDialog/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586302534862" />
+    <state x="435" y="243" key="com.intellij.ide.util.TipDialog/0.0.1280.720/-1920.0.1920.1080@0.0.1280.720" timestamp="1586492642793" />
     <state x="435" y="243" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1586408327414" />
     <state x="0" y="0" width="620" height="720" key="find.popup" timestamp="1586362996265">
       <screen x="0" y="0" width="1280" height="720" />
