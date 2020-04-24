@@ -1,7 +1,7 @@
 # 교보문고 베스트셀러 컴퓨터/IT Top 100 데이터 뽑아오기
 
 import requests
-from bs4 import BeautifulSoup
+from    bs4 import BeautifulSoup
 import csv
 
 class Scrapper():
