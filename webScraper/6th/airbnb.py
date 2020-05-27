@@ -1,3 +1,6 @@
+# 페이지 로딩 시간이 인터넷 환경에 따라 차이가 있어서 그런건지 같은 코드에 같은 조건을 입력했음에도
+# 결과가 정상적으로 출력될 때가 있고, 아니면 중간에 프로그램이 페이지에서 데이터를 읽어오지 못해서 그냥 종료될 때도 있습니다
+# 최대한 문제를 해결해보려고 time.sleep()을 이곳저곳에 배치해놔서 프로그램 실행시간이 좀 오래 걸릴 수도 있습니다.
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
